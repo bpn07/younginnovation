@@ -15,17 +15,17 @@
   </head>
   <body>
     <main>
-      <nav>
+      <nav id="nav">
         <div class="logo">
           <h1 class="logo-title">T</h1>
           <p class="logo-paragraph">Trafalgar</p>
         </div>
         <ul class="navbar">
           <li><a href="#home">Home</a></li>
-          <li><a href="#home">Find a doctor</a></li>
-          <li><a href="#home">Apps</a></li>
-          <li><a href="#home">Testimonials</a></li>
-          <li><a href="#home">About us</a></li>
+          <li><a href="#doctor">Find a doctor</a></li>
+          <li><a href="#apps">Apps</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#about">About us</a></li>
         </ul>
       </nav>
       <section class="hero-section" id="home">
@@ -45,7 +45,7 @@
           />
         </div>
       </section>
-      <section class="services-section">
+      <section class="services-section" id="doctor">
         <div class="services-header">
           <h1 class="services-title">Our services</h1>
           <p class="section-text">
@@ -157,63 +157,138 @@ lovely family
             <button class="btn providers-btn">Learn more</button>
         </div>
       </section>
-      <section class="download-section">
-        <div><p class="title providers-title">Leading healthcare providers</p>
-          <p class="text">Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone. To us, it’s not just work. We take pride 
-            in the solutions we deliver</p>
-            <button class="btn providers-btn">Learn more</button></div>
+      <section class="download-section" id="apps">
+        <div><p class="title providers-title">Download our 
+          mobile apps</p>
+          <p class="text">Our dedicated patient engagement app and 
+            web portal allow you to access information instantaneously (no tedeous form, long calls, 
+            or administrative hassle) and securely</p>
+            <button class="btn providers-btn">Download <span><i class="fa-solid fa-arrow-down"></i></span></button></div>
         <div>
           <img src="../images/trafalgar-illustration sec03 1.png" alt="">
         </div>
-      <section class="testimonial-section">
+      </section>
+      <section class="testimonial-section" id="testimonials">
         <div class="testimonial-card">
-          <div>
-            <img src="../images/image 1.jpg" alt="">
+          <p class="testimonial-title">What our customer are saying</p>
+          <div class="testimonial-info">
+            <div class="profile">
+            <img src="../images/image 1.jpg" alt="customer image" class="testimonial-img">
             <div>
-              <p>
+
+              <p class="profile-name"></p>
                 Edward Newgate
               </p>
-              <p>Founder Circle</p>
+              <p class="profile-desc">Founder Circle</p>
             </div>
-            <div>
+            </div>
+            <div class="testimonial-text">
               <p>“Our dedicated patient engagement app and 
                 web portal allow you to access information instantaneously (no tedeous form, long calls, 
                 or administrative hassle) and securely”</p>
             </div>
           </div>
         </div>
-        <div></div>
-      <section class="blog-section">
-        <div><p>Check out our latest article</p></div>
-        <div class="blog-card">
-          <img src="" alt="">
-          <p></p>
-          <p></p>
-          <button></button>
+        <div class="carousel">
+        
+            <i class="fa-sharp fa-solid fa-arrow-left "></i>
+            <i class="fa-solid fa-circle"></i>
+            <i class="fa-solid fa-circle duotone"></i>
+            <i class="fa-solid fa-circle duotone"></i>
+            <i class="fa-solid fa-circle duotone"></i>
+            <i class="fa-sharp fa-solid fa-arrow-right"></i>
+
+      
+          
         </div>
-        <button></button>
+      </section>
+        
+      <section class="blog-section">
+        <div><p class="title blog-title">Check out our latest article</p></div>
+        <div class="card-section">
+          <div class="blog-card">
+            <img src="../images/image 2.jpg" alt="" class="blog-img">
+            <p class="card-title"> Disease detection, check 
+              up in the laboratory</p>
+            <p class="card-text">In this case, the role of the health laboratory is very important to do
+              a disease detection...</p>
+              <a href="" class="card-link">Read More <span><i class="fa-sharp fa-solid fa-arrow-right"></i></i></span></a>
+            </div> 
+            <div class="blog-card">
+              <img src="../images/image 2.png" alt="" class="blog-img">
+              <p class="card-title">Herbal medicines that are 
+                safe for consumption</p>
+              <p class="card-text">Herbal medicine is very widely used at this time because of its very good for your health...</p>
+                <a href="" class="card-link">Read More <span><i class="fa-sharp fa-solid fa-arrow-right"></i></span></a>
+              </div>
+               <div class="blog-card">
+                <img src="../images/image 3.png" alt="" class="blog-img">
+                <p class="card-title"> Natural care for healthy 
+                  facial skin </p>
+                <p class="card-text">A healthy lifestyle should start from now and also for your skin health.
+                  There are some...</p>
+                  <a href="" class="card-link">Read More <span><i class="fa-sharp fa-solid fa-arrow-right"></i></span></a>
+                </div>
+        </div>
+       
+          <button class="btn providers-btn ">View all</button>
       </section>
       <section class="contact-section">
-        <form>
-          <label for=""></label>
-          <input type="text">
-          <label for=""></label>
-          <input type="text">
-          <label for=""></label>
-          <input type="text">
-          <label for=""></label>
-          <input type="text">
-        </form>
+        <div class="contact-desc">
+          <p class="title contact-title"> Contact us</p>
+          <p> Have any questions? We’d love to hear from you.</p>
+        </div>
+        <form class="contact">
+          <div class="flex">
+            <div class="contact-form">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" class="input"></div>
+            <div class="contact-form"><label for="phone">Phone No.</label>
+              <input type="number" id="phone" class="input"></div>
+          </div>
+          <div class="contact-form"><label for="email">Email ID</label>
+            <input type="text" id="email" class="input"></div>
+          <div class="contact-form" > <label for="textarea">Your message</label>
+            <textarea name="textarea" id="textarea" cols="30" rows="10" class="input"></textarea></div>
+          </form>
+          <button class="btn providers-btn center">Send message</button>
       </section>
     </main>
     <footer>
-      <div>
-        <p>T</p>
-        <p>Trafalgar</p>
+      <div class="copyright">
+<div class="footer-logo" id="about">
+  <p class="footer-title">T</p>
+  <p class="footer-text">Trafalgar</p>
+</div>
+<p class="footer-paragraph">Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online 
+  for everyone</p>
+  <p class=" footer-paragraph ">©Trafalgar PTY LTD 2020. All rights reserved</p>
       </div>
-      <div></div>
-      <div></div>
-      <div></div>
+      
+      <div class="footer-flex">
+        <p class="footer-text">Company</p>
+        <p class="footer-paragraph">About</p>
+        <p class="footer-paragraph">Testimonials</p>
+        <p class="footer-paragraph">Find a doctor</p>
+        <p class="footer-paragraph">Apps</p>
+      </div>
+      <div class="footer-flex">
+        <p class="footer-text">Region</p>
+        <p class="footer-paragraph"> Indonesia</p>
+        <p class="footer-paragraph">Singapore</p>
+        <p class="footer-paragraph">Hongkong</p>
+        <p class="footer-paragraph">Canada</p>
+      </div>
+      <div class="footer-flex">
+        <p class="footer-text">Help</p>
+        <p class="footer-paragraph"> Help center</p>
+        <p class="footer-paragraph">Contact support</p>
+        <p class="footer-paragraph">Instructions</p>
+        <p class="footer-paragraph">How it works</p>
+      </div>
+      <div>
+        <a class="scroll" href="#nav">Scroll to top</a>
+      </div>
     </footer>
   </body>
 </html>
